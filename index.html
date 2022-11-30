@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+        <title>Kinopopka</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo"><a href="#">
+                        <img src="./images/logo.png" alt="image">
+                        <h2>kinopopka</h2>
+                    </a></div>
+                    <div class="search-field">
+                        <div class="search" id="search-line">
+                            <input type="text" placeholder="Поиск" id="search"></input>
+                            <button type="submit"><img src="./images/search.png" alt="image"></button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="body-container">
+                <div class="filter-content">
+                    <div class="main-filter">
+                        <div class="main-genre checkselect">
+                            <span><label for="Western">Вестерн</label><input type="checkbox" name="Western" id="Western" onchange="filterFunction()"></span>
+                            <span><label for="Adventures">Приключение</label><input type="checkbox" name="Adventures" id="Adventures" onchange="filterFunction()"></span>
+                            <span><label for="Action">Боевик</label><input type="checkbox" name="Action" id="Action" onchange="filterFunction()"></span>
+                            <span><label for="Comedy">Комедия</label><input type="checkbox" name="Comedy" id="Comedy" onchange="filterFunction()"></span>
+                            <span><label for="Military">Военный</label><input type="checkbox" name="Military" id="Military" onchange="filterFunction()"></span>
+                            <span><label for="Drama">Драма</label><input type="checkbox" name="Drama" id="Drama" onchange="filterFunction()"></span>
+                            <span><label for="Criminal">Криминал</label><input type="checkbox" name="Criminal" id="Criminal" onchange="filterFunction()"></span>
+                            <span><label for="Triller">Триллер</label><input type="checkbox" name="Triller" id="Triller" onchange="filterFunction()"></span>
+                            <span><label for="Detective">Детектив</label><input type="checkbox" name="Detective" id="Detective" onchange="filterFunction()"></span>
+                        </div>
+                        <div class="main-year checkselect">
+                            <span><label for="2018">2018</label><input onchange="filterFunction()" type="checkbox" name="2022" id=2018></span>
+                            <span><label for="2015">2015</label><input onchange="filterFunction()" type="checkbox" name="2015" id=2015></span>
+                            <span><label for="2013">2013</label><input onchange="filterFunction()" type="checkbox" name="2013" id=2013></span>
+                            <span><label for="2012">2012</label><input onchange="filterFunction()" type="checkbox" name="2012" id=2012></span>
+                            <span><label for="2006">2006</label><input onchange="filterFunction()" type="checkbox" name="2006" id=2006></span>
+                            <span><label for="2005">2005</label><input onchange="filterFunction()" type="checkbox" name="2005" id=2005></span>
+                            <span><label for="2004">2004</label><input onchange="filterFunction()" type="checkbox" name="2004" id=2004></span>
+                            <span><label for="1998">1998</label><input onchange="filterFunction()" type="checkbox" name="1998" id=1998></span>
+                            <span><label for="1994">1994</label><input onchange="filterFunction()" type="checkbox" name="1994" id=1994></span>
+                            <span><label for="1972">1972</label><input onchange="filterFunction()" type="checkbox" name="1972" id=1972></span>
+                            <span><label for="1966">1966</label><input onchange="filterFunction()" type="checkbox" name="1966" id=1966></span>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container">
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
